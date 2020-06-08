@@ -44,15 +44,8 @@ def matrix_lookup(matrix, row, column)
 end
 
 def matrix_update(matrix, row, column, new_value)
- # produce_storage_room = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
-   produce_storage_room_sorted = [
+  matrix[0,2] = "#{new_value}"
   
-  ["Grapefruit","Pineapple","Oranges","Watermelon","Eggplant"].sort,
-  ["Strawberries","Potatoes","Grapes","Avocadoes","Asparagus"].sort
-  
-  ]
-  produce_storage_room_sorted[0,2] = "#{new_value}"
-  puts produce_storage_room_sorted
   
   # Given any matrix (array of arrays), a row index and a column index, 
   # Update the matrix location at that row and column to have the value of new_value
